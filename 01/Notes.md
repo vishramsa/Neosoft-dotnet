@@ -1,4 +1,4 @@
-## Version Control System
+## [Version Control System](https://www.atlassian.com/git/tutorials/what-is-version-control)
 - We use VCSs to collaborate as a team of programmars, track changes, do code review and much more...
 - This can be of 2 types
 	- Distributed VCS
@@ -40,8 +40,13 @@
 - `git push` - add changes to git origin/server
 - `git pull` - to get changes from the server
 - `git branch` - tells you how many branches you have and which branch are you current;y pointing to.
-- `git checkout -b feature-pushpinder` - creates a new branch `feature-pushpinder` and switch it as a working branch.
-- git add -> commit -> git push
+- `git checkout -b feature-<your firstname>` - creates a new branch `feature-pushpinder` and switch it as a working branch.
+- git add Notes.md 
+- git  commit -m "Added something about VCS -firstname"
+- git push --set-uptream origin feature-<your firstname>
 - make a Pull Request for code review
 
 
+## [Application Architecture:](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures)
+- Tiering vs Layering
+- 1-tier, 2-tier, 3-tier, N-tier
