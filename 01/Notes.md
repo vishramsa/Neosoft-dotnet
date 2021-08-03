@@ -39,3 +39,9 @@
 - `git commit -m 'add notes for git basics'` - create a tracking node
 - `git push` - add changes to git origin/server
 - `git pull` - to get changes from the server
+- `git branch` - tells you how many branches you have and which branch are you current;y pointing to.
+- `git checkout -b feature-pushpinder` - creates a new branch `feature-pushpinder` and switch it as a working branch.
+- git add -> commit -> git push
+- make a Pull Request for code review
+
+
