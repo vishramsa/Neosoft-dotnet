@@ -52,3 +52,40 @@
 - Tiering vs Layering
 - 1-tier, 2-tier, 3-tier, N-tier
 - ![Application architecture](https://github.com/Tech-Training-2021/Neosoft-dotnet/blob/main/01/Images/2Application%20architecture.png)
+
+## [Basics of Computer Architecture Hardware and software](https://www.tutorialspoint.com/computer_concepts/computer_concepts_introduction_to_gui_based_os.htm)
+- **Operating Systems** : Its a software that controls system's hardware and interact user and application software.
+- Function of an OS:	
+  - CPU Scheduling - process management 
+  - offers UI to interact
+  - Manages memory, files and directory management 
+  -  ....more
+- Unix, Linux, Windows, MacOS, Android 
+  
+## Programming language Journey [https://www.geeksforgeeks.org/the-evolution-of-programming-languages/]
+- 1883 Charles Babbage created computers. He was inspired by Abacus
+-  Hardware only understands 0s and 1s or binary language -> **Machine language**. One of the Lowest level of language. Needs a skills to understand the program.
+-  **Assembly Language** - 1949
+   -  low-level language
+   -  consistes of instructions (symbols) that only machine can understand. REGISTER, STOR, ADD, MOV, ROTATE
+   -  FBW systems, medical equiments 
+- **High Level** - Fortran, Algol, Cobol, Basic, C, C++, Java, C#
+  
+## Journey of High level languages [https://www.geeksforgeeks.org/difference-between-structured-programming-and-object-oriented-programming/[]]
+- Structural/Procedural oriented language: 
+  - It gives more importance of code.
+  - write functions, modules and program flow
+  - What to do and How to do  - lots of programming expertise require along with long efforts.
+  - Variables and data was not secured well, program was scattered, reusability was limited 
+  - Top down approach
+  - Ex - C, ALGOL
+  
+- Object Oriented Programming 
+  - It gives more importance to data. 
+  - what to do is more foccussed over how to do
+  - brings together data and functions that execute on them.
+  - program is more organized in the form of classes, functions/methods and data is secure within them
+  - Pillars of OOP - Encapsulation, Abstraction, Polymorphism and Inheritance
+  - this model of prgramming is based of real life entities 
+  - Bottom up approach
+  - Ex - C++, Java, C# etc...
