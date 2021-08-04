@@ -5,6 +5,7 @@
 		- Github, BitBucket, Gitlab etc...
 	- Centralized VCS
 		- TFS, VSTS, SVN
+- ![Version control system board work](https://github.com/Tech-Training-2021/Neosoft-dotnet/blob/main/01/Images/1VCS%20.png)
 # Git
 ## Basic Git and commands
 - `cd 'path'` -> change directory
@@ -50,3 +51,4 @@
 ## [Application Architecture:](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures)
 - Tiering vs Layering
 - 1-tier, 2-tier, 3-tier, N-tier
+- ![Application architecture](https://github.com/Tech-Training-2021/Neosoft-dotnet/blob/main/01/Images/2Application%20architecture.png)
