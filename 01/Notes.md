@@ -71,7 +71,7 @@
    -  FBW systems, medical equiments 
 - **High Level** - Fortran, Algol, Cobol, Basic, C, C++, Java, C#
   
-## Journey of High level languages [https://www.geeksforgeeks.org/difference-between-structured-programming-and-object-oriented-programming/[]]
+## [Journey of High level languages] (https://www.geeksforgeeks.org/difference-between-structured-programming-and-object-oriented-programming/)
 - Structural/Procedural oriented language: 
   - It gives more importance of code.
   - write functions, modules and program flow
@@ -79,7 +79,7 @@
   - Variables and data was not secured well, program was scattered, reusability was limited 
   - Top down approach
   - Ex - C, ALGOL
-  
+- 
 - Object Oriented Programming 
   - It gives more importance to data. 
   - what to do is more foccussed over how to do
