@@ -62,7 +62,7 @@
   -  ....more
 - Unix, Linux, Windows, MacOS, Android 
   
-## Programming language Journey [https://www.geeksforgeeks.org/the-evolution-of-programming-languages/]
+## [Programming language Journey](https://www.geeksforgeeks.org/the-evolution-of-programming-languages/)
 - 1883 Charles Babbage created computers. He was inspired by Abacus
 -  Hardware only understands 0s and 1s or binary language -> **Machine language**. One of the Lowest level of language. Needs a skills to understand the program.
 -  **Assembly Language** - 1949
@@ -71,7 +71,7 @@
    -  FBW systems, medical equiments 
 - **High Level** - Fortran, Algol, Cobol, Basic, C, C++, Java, C#
   
-## [Journey of High level languages] (https://www.geeksforgeeks.org/difference-between-structured-programming-and-object-oriented-programming/)
+## [Journey of High level languages](https://www.geeksforgeeks.org/difference-between-structured-programming-and-object-oriented-programming/)
 - Structural/Procedural oriented language: 
   - It gives more importance of code.
   - write functions, modules and program flow
