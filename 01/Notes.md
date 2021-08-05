@@ -79,7 +79,7 @@
   - Variables and data was not secured well, program was scattered, reusability was limited 
   - Top down approach
   - Ex - C, ALGOL
-- 
+  
 - Object Oriented Programming 
   - It gives more importance to data. 
   - what to do is more foccussed over how to do

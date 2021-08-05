@@ -77,8 +77,26 @@ These are frameworks that extend .NET platform to provide additional functionali
 .NET 5
 ASP.NET: ASP.NET Core to match with .NET Core 
 
+## C#
+### [Anatomy of C# program](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/)
+- namespace -> Types -> Type members
+    - Namespace
+        - Types - Members (Methods, variables, properties)
+- [Types](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/types) (Classes, Enums, Structs, Interface, Delegates)
+  - All types in C# are inherited directly or indirectly Sytem.Object
+        - **[Value Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types)** - which has the direct value, stored in memory Stack, fast to access. Structs, Enums. Predefined (int, long, short, byte, DateTime, char)
+        - **[Reference Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types)** - it stores the reference to that value, value is stored in heap, expensive retrieval process. Classes, interface, Delegates. Predefined -> string, arrays, collections etc
+  - Type Conversion : conversion of 1 type into another 
+    - Implicit type conversion : no need to type cast. Ex byte value can be placed in int. No data loss.
+    - Explicit type conversion : type cast it using `<datatype>.Parse(value)`, `Convert.<datatype>(value)`. You can have a data loss if its not fitting in the type.
+  
+- **Boxing**- refers to conversion Value type to reference types.
+- **Unboxing**- refers to conversion of reference types to value types.
+
 ### Additional Resources
 - [.NET Documentation](https://docs.microsoft.com/en-us/dotnet/core/introduction)
 - [.NET Glossary](https://docs.microsoft.com/en-us/dotnet/standard/glossary)
 - [Introducing .NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/)
 - [What is .NET?](https://www.codecademy.com/articles/what-is-net)
+- [Learn C# in interactive way](https://docs.microsoft.com/en-us/users/dotnet/collections/yz26f8y64n7k07)
+- [Learn C# from video](https://channel9.msdn.com/Series/CSharp-Fundamentals-for-Absolute-Beginners)
