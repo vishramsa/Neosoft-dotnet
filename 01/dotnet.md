@@ -41,11 +41,12 @@
     - It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phones, and even the Xbox.
 
 ## Components of .NET Implementation
-    - One or more runtime: Example, .NET Framework CLR, .NET 5 CLR
-        - CLR stands for *Common Language Runtime* and it's a runtime environment provided by .NET
-    - A class library, for example, .NET Framework Base Class Library, or .NET 5 Base Class Library.
-    - Optionally, we have one or more application frameworks, such as ASP.NET Core for web application development, Windows Forms, etc.
-    - Optionally, development tools. Some are shared among multiple implementations.
+- One or more runtime: Example, .NET Framework CLR, .NET 5 CLR
+     - [CLR](https://docs.microsoft.com/en-us/dotnet/standard/clr) stands for *Common Language Runtime* and it's a runtime environment provided by .NET.
+     - Compilers and tools expose the common language runtime's functionality and enable you to write code that benefits from this [managed execution environment](https://docs.microsoft.com/en-us/dotnet/standard/managed-execution-process).
+- A class library, for example, .NET Framework Base Class Library, or .NET 5 Base Class Library.
+- Optionally, we have one or more application frameworks, such as ASP.NET Core for web application development, Windows Forms, etc.
+- Optionally, development tools. Some are shared among multiple implementations.
 
 #### CLR? SDK?
 - CLR Stands for Common Language Runtime, and it's runtime environment. It is also know as main execution Engine and is used to run any .Net application.
@@ -64,7 +65,12 @@ These are frameworks that extend .NET platform to provide additional functionali
 - **Xamarin**: for mobile development
 - **ML.NET**: machine learning
 - and more..
-
+## Types of Applications
+- CUI (Character User Interface) - command line interface. Ex console app in .Net
+- GUI (with user friendly UI) - Desktop app, web apps
+- Smart UIs - Android or IOS
+- APIs - REST Api
+- Cloud application : Azure, GCP, AWS
 ### Other Niceties..
 - **Nuget**: a package manager for .NET
 
