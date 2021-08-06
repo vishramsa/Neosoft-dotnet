@@ -25,10 +25,10 @@ namespace HelloWorld
             //Console.WriteLine("Enter the Quantity : ");
             //int quantity=Convert.ToInt32(Console.ReadLine());
             //CoffeeMachine.getCoffee(userSelection, quantity);
-            /*----------------------------------------------Calculating FizzBuzz Program------------------------------------------------------------------------------------------------*/
-            /* FizzBuzz.fizzBuzz();*/
+            //----------------------------------------------Calculating FizzBuzz Program------------------------------------------------------------------------------------------------
+            FizzBuzz.fizzBuzz();
 
-            /*---------------------------------------------- Calculating Positive integer prime number----------------------------------------------*/
+            /* Calculating Positive integer prime number*/
             /*  getUserInput:
               Console.WriteLine("Enter Number");
               int number = int.Parse(Console.ReadLine());
@@ -38,11 +38,6 @@ namespace HelloWorld
                   goto getUserInput;
               }
               positiveIntegerPrimeNumber.checkPrimeNumber(number);*/
-
-            /*----------------------------------------------Arrays----------------------------------------------*/
-            Array1.singleDimensionArray();
-            Console.WriteLine();
-            Array1.jaggedArray();
         }
     }
 }
