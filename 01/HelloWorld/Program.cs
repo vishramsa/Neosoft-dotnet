@@ -13,10 +13,14 @@ namespace HelloWorld
             int n=int.Parse(Console.ReadLine());
             Console.Write($"\nThe factorial of {n} is {Coding.GetFactorial_Recursive(n)}");*/
 
-            Console.WriteLine("-------Welcome to my coffee shop------------");
+            /*Console.WriteLine("-------Welcome to my coffee shop------------");
             Console.Write("Please make your Selection.\nPress<1> for small\nPress<2>Medium\n<Press<3> for large\n");
             string choice = Console.ReadLine();
-            CoffeeMachine.GetCoffee(choice);
+            CoffeeMachine.GetCoffee(choice);*/
+
+            //Arrays.SingleDimensionArray();
+            //Arrays.MultiDimensionalArray();
+            Arrays.JaggedArrays();
         }
     }
 }

@@ -102,6 +102,10 @@ ASP.NET: ASP.NET Core to match with .NET Core
   -  **Jump statements** : transfer controlt o another section of code. Ex break, continue, default, goto, return.
   -  **Exception handling statements** : recover from runtime errors gracefully. Ex throw, try-catch, try-catch-finally, try-finally.
 
+## [Arrays](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/) 
+- A variable to hold multiple values which are of same type (homogenous) and are located in contigious memory location.
+- An array which in initialized must consist of a value.
+
 ### Additional Resources
 - [.NET Documentation](https://docs.microsoft.com/en-us/dotnet/core/introduction)
 - [.NET Glossary](https://docs.microsoft.com/en-us/dotnet/standard/glossary)
