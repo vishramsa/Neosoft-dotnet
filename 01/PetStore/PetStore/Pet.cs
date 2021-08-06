@@ -11,7 +11,6 @@ namespace PetStore
         internal DateTime dob;
         // reference type
         internal string name;
-
         internal string GetDetails()
         {
             return $" Pet name : {name}\n Pet ID: {id}\n Pet Birthday : {dob.ToShortDateString()}\n Pet Gender : {gender}"; 

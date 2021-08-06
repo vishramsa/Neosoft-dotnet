@@ -93,6 +93,15 @@ ASP.NET: ASP.NET Core to match with .NET Core
 - **Boxing**- refers to conversion Value type to reference types.
 - **Unboxing**- refers to conversion of reference types to value types.
 
+## [Statments](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/statements)
+- A statement can consist of a single line of code that ends in a semicolon, or a series of single-line statements in a block. A statement block is enclosed in {} brackets and can contain nested blocks.
+  -  **Expressions statements**: consists of operands and operators. Ex a + b ;
+  -  **Declaration statements** : creating a new variable. Ex int a;
+  -  **Selection Statements** : enables to branch a code in different sections based on the conditions. Ex if, else, switch, case.
+  -  **Iteration Statements** : enables to repeat or loop through. Ex do-while, for, foreach, while.
+  -  **Jump statements** : transfer controlt o another section of code. Ex break, continue, default, goto, return.
+  -  **Exception handling statements** : recover from runtime errors gracefully. Ex throw, try-catch, try-catch-finally, try-finally.
+
 ### Additional Resources
 - [.NET Documentation](https://docs.microsoft.com/en-us/dotnet/core/introduction)
 - [.NET Glossary](https://docs.microsoft.com/en-us/dotnet/standard/glossary)
