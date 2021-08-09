@@ -20,7 +20,13 @@ namespace HelloWorld
 
             //Arrays.SingleDimensionArray();
             //Arrays.MultiDimensionalArray();
-            Arrays.JaggedArrays();
+            //Arrays.JaggedArrays();
+
+            // Strings
+            LearnStrings.GetStrings();
+            //System.Console.Write("please enter a string to be reversed ");
+            //string input=Console.ReadLine();
+            //LearnStrings.PrintBackwards(input.ToUpper());
         }
     }
 }

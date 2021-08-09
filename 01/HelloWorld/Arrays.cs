@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
+﻿using abc = System.Console; // using namepsace as an alias
 
 namespace HelloWorld
 {
@@ -18,12 +13,12 @@ namespace HelloWorld
 
             //int[] marks = new int[] { 80, 85, 67, 78, 98,96 };
             int[] marks = { 80, 85, 67, 78, 98,96 };
-            Console.WriteLine($"Number of elements in an array {marks.Length}");
-            Console.WriteLine($"Rank of an array {marks.Rank}");
+            abc.WriteLine($"Number of elements in an array {marks.Length}");
+            abc.WriteLine($"Rank of an array {marks.Rank}");
             //for (int i = 0; i < marks.Length; i++)
             foreach(int mark in marks)
             {                
-                Console.WriteLine(mark);
+                abc.WriteLine(mark);
             }
         }
         internal static void MultiDimensionalArray()
@@ -33,8 +28,8 @@ namespace HelloWorld
             matrix[0, 0] = 1;*/
            
             int[,] matrix = { { 1, 2, 3 }, { 4, 5, 6 } };
-            Console.WriteLine($"Length of array {matrix.Length}");
-            Console.WriteLine("Rank of the array {0}",matrix.Rank);
+            abc.WriteLine($"Length of array {matrix.Length}");
+            abc.WriteLine("Rank of the array {0}",matrix.Rank);
         }
         internal static void JaggedArrays()
         {
@@ -44,8 +39,8 @@ namespace HelloWorld
             ja[1] = new int[2] { 4, 5 }; // row 2
             ja[2] = new int[5] { 7, 8, 9, 2, 4 }; //row 3
 
-            Console.WriteLine($"Length of array {ja.Length}");
-            Console.WriteLine("Rank of the array {0}", ja.Rank);
+            abc.WriteLine($"Length of array {ja.Length}");
+            abc.WriteLine("Rank of the array {0}", ja.Rank);
             /*for (int i = 0; i < ja.Length; i++)
             {
                 Console.Write("Row({0})",i);
@@ -59,9 +54,9 @@ namespace HelloWorld
             {
                 foreach (int i in item)
                 {
-                    Console.Write(" " + i);
+                    abc.Write(" " + i);
                 }
-                Console.WriteLine();
+                abc.WriteLine();
             }
         }
     }
