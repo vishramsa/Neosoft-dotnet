@@ -11,7 +11,19 @@
    
    <br/>
 
-   #### Example of Late Binding
+
+### Example for Late Binding:
+Common Examples:
+
+`Object objItems;`
+
+`objItems = CreateObject("DLL or Assembly name");`
+
+    Here during the compile time, type of objItems is not determined. We are creating an object of a dll and assigning it to the objItems, so everything is determined at the run time.
+
+   <br/>
+
+   #### Code for Late Binding
 
 ```
 // concept of late binding
@@ -66,7 +78,19 @@ namespace LateBinding_Vs_EarlyBinding
 
  <br/>
 
-   #### Example of Early Binding
+### Example for Early Binding
+
+Common Examples:
+
+- ComboBox cboItems;
+
+- ListBox lstItems;
+  
+    In the above examples, if we type the cboItem and place a dot followed by, it will automatically populate all the methods, events and properties of a combo box, because compiler already know it's an combobox.
+
+ <br/>
+
+   #### Code for Early Binding
 
    ```
 using System;
@@ -104,7 +128,7 @@ namespace LateBinding_Vs_EarlyBinding
 
             // Calling the method of Geeks class
             binding.details("Himani", "C#");
-            
+
             // Calling "mymethod()" gives error
             // because this method does not
             // belong to class Binding or compiler
@@ -117,3 +141,18 @@ namespace LateBinding_Vs_EarlyBinding
 }
 
    ```
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+### Difference Between Late Binding Vs Early Binding
+
+|Late Binding|Early Binding|
+|------------|-------------|
+|It is a compile-time process|It is a run-time process|
+|The method definition and method call are linked during the compile time.|The method definition and method call are linked during the run time.|
+|Actual object is not used for binding.|Actual object is used for binding.|
+|For example: Method overloading|For example: Method overriding|
+|Program execution is faster|Program execution is slower|
