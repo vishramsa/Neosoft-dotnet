@@ -28,11 +28,11 @@ namespace LateBinding_Vs_EarlyBinding
     {
         static void Main(string[] args)
         {
-            // creating object of Geeks class
+            // creating object of Binding class
             Binding binding = new Binding();
 
-            // Calling the method of Geeks class
-            binding.details("Ankita", "C#");
+            // Calling the method of Binding class
+            binding.details("Himani", "C#");
 
             // Calling "mymethod()" gives error
             // because this method does not
