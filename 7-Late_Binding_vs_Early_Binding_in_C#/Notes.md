@@ -149,7 +149,7 @@ namespace LateBinding_Vs_EarlyBinding
 
 ### Difference Between Late Binding Vs Early Binding
 
-|Late Binding|Early Binding|
+|Early Binding|Late Binding|
 |------------|-------------|
 |It is a compile-time process|It is a run-time process|
 |Early Binding is also known as static binding.| Late Binding is also known as dynamic binding.|
