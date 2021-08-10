@@ -142,8 +142,12 @@ namespace LateBinding_Vs_EarlyBinding
 
    ```
 
+
 <br/>
 <br/>
+
+![image](Early-binding-and-Late-binding-in-C.png)
+
 <br/>
 <br/>
 
