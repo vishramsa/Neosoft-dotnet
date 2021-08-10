@@ -6,8 +6,8 @@
   
 | #   |Group |    Topics                                                             |
 |----|-|-----------------------------------------------------------------------------|
-| 1. |Kajal, Saif, Romila, Imam | Assemblies in .Net and assembly vs namespace|
-| 2. |Mitali, Nomaan, Kunal, Vishram | The .NET Framework – Ver. 2.0 Vs. 3.0 Vs. 3.5 Vs 4.0 Vs 4.5 vs 4.6 vs 4.7|
+| 1. |Kajal, Kunal , Romila, Imam | Assemblies in .Net and assembly vs namespace|
+| 2. |Mitali, Nomaan, Saif, Vishram | The .NET Framework – Ver. 2.0 Vs. 3.0 Vs. 3.5 Vs 4.0 Vs 4.5 vs 4.6 vs 4.7|
 | 3. | Maaria, Prachi, Nivrutti  | this, base, Read only and const keywords|
 | 4. | Vivek M, Ramya, Emran, Raj | Ref vs out|
 | 5. |Yogesh, Lucky, Shivani G, Pratiksha | Comparing between ==, Equals, ReferenceEquals and CompareTo|
