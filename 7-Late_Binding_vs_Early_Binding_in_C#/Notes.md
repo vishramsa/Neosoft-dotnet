@@ -1,5 +1,8 @@
 # Late Binding
-   ### What is Late Binding
+
+<br/>
+
+   ### What is Late Binding ?
    1.  Objects are dynamic objects
    2.  Achieved by using virtual methods
    3.  Performance : slow as compared to the early binding
@@ -7,29 +10,34 @@
    5.  Variables declared by using dynamic can be an example of late binding.Because type of the variable is decided by the compiler at runtime.
    
    <br/>
-   
+
    #### Example of Late Binding
 
 ```
 // concept of late binding
 using System;
-  
-class GFG {
-    static void Main()
+
+namespace LateBinding_Vs_EarlyBinding
+{
+    class LateBinding
     {
-        // Dynamic objects
-        dynamic obj = 4;
-        dynamic obj1 = 5.678;
-  
-        // Display the type of objects
-        Console.WriteLine("The type of the objects are :");
-  
-        // GetType() method is 
-        // used to get the type
-        Console.WriteLine(obj.GetType());
-        Console.WriteLine(obj1.GetType());
+        static void Main(string[] args)
+        {
+            // Dynamic objects
+            dynamic obj = 4;
+            dynamic obj1 = 5.678;
+
+            // Display the type of objects
+            Console.WriteLine("The type of the objects are :");
+
+            // GetType() method is 
+            // used to get the type
+            Console.WriteLine(obj.GetType());
+            Console.WriteLine(obj1.GetType());
+        }
     }
 }
+
 ```
 <br/>
 
@@ -46,3 +54,66 @@ class GFG {
 <br/>
 
 # Early Binding
+
+<br/>
+
+   ### What is Early Binding ?
+   1. The compiler knows about what kind of object it is, what are all the methods and properties it contains.
+   2. It recognizes and checks the methods, or properties  during compile time.
+   3. The performance of early binding is fast and it is easy to code.
+   4. It decreases the number of run-time errors.
+   5. Variables declared by using var can be an example of early binding.Because type of the variable is decided by the compiler at compile time.
+
+ <br/>
+
+   #### Example of Early Binding
+
+   ```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LateBinding_Vs_EarlyBinding
+{
+    /* concept of early binding */
+    public class Binding
+    {
+        // data members
+        public string name;
+        public string subject;
+
+        // public method
+        public void details(string name, string subject)
+        {
+            this.name = name;
+            this.subject = subject;
+            Console.WriteLine("Myself: " + name);
+            Console.WriteLine("My Favorite Subject is: " + subject);
+        }
+    }
+    
+    /* Driver Class */
+    class EarlyBinding
+    {
+        static void Main(string[] args)
+        {
+            // creating object of Geeks class
+            Binding binding = new Binding();
+
+            // Calling the method of Geeks class
+            binding.details("Himani", "C#");
+            
+            // Calling "mymethod()" gives error
+            // because this method does not
+            // belong to class Binding or compiler
+            // does not know mymethod() at compile time
+            binding.mymethod();
+
+
+        }
+    }
+}
+
+   ```
