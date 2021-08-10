@@ -152,7 +152,19 @@ namespace LateBinding_Vs_EarlyBinding
 |Late Binding|Early Binding|
 |------------|-------------|
 |It is a compile-time process|It is a run-time process|
+|Early Binding is also known as static binding.| Late Binding is also known as dynamic binding.|
 |The method definition and method call are linked during the compile time.|The method definition and method call are linked during the run time.|
 |Actual object is not used for binding.|Actual object is used for binding.|
 |For example: Method overloading|For example: Method overriding|
 |Program execution is faster|Program execution is slower|
+
+<br/><br/>
+
+![diff image](https://www.bestprog.net/wp-content/uploads/2020/04/02_02_02_11_09_01e-1024x603.jpg)
+<br/>
+<br/>
+<br/>
+
+### Summary
+
+OOP is used commonly for software development. One major pillar of OOP is polymorphism. Early Binding and Late Binding are related to that. Early Binding occurs at compile time while Late Binding occurs at runtime. In method overloading, the bonding happens using the early binding. In method overriding, the bonding happens using the late binding. The difference between Early and Late Binding is that Early Binding uses the class information to resolve method calling while Late Binding uses the object to resolve method calling.
