@@ -15,7 +15,8 @@ namespace HelloWorld
             System.Console.WriteLine(sb.ToString());
             
         }
-        internal static void PrintBackwards(string s){
+        internal static void PrintBackwards(System.Text.StringBuilder s){
+            s.Replace(newValue: "Fibonacci",oldValue:"Palindrome" ); // named parameters
             for (int i = 0; i < s.Length; i++)
             {
                 System.Console.Write(s[s.Length-i-1]);

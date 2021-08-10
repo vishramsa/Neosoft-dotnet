@@ -8,7 +8,7 @@ namespace HelloWorld
 {
     class CoffeeMachine
     {
-        internal static void GetCoffee(string selection)
+        internal static void GetCoffee(string selection = "1") // optional parameter
         {
             int cost = 0;
             switch (selection)

@@ -8,8 +8,9 @@ namespace HelloWorld
 {
     class Coding
     {
-        internal static int GetFactorial(int n) //5
+        internal static int GetFactorial(ref int n) //5
         {
+            n=5;
             int result = 1;
             for (int i = n; i >= 1; i--)
             {
