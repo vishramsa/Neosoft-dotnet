@@ -53,14 +53,6 @@ namespace LateBinding_Vs_EarlyBinding
 ```
 <br/>
 
-   ### Compile Time Binding and Late Binding
-   1. Binding is an association of function calls to an object.
-   2. The binding of a member function, which is called within an object and is called compiler time or static type or early binding.
-   3. All the methods are called an object or class name are the examples of compile time binding.
-   4. **The binding of the function calls an object at the run time is called run time or dynamic or late binding.**
-   5. Late binding is achieved, using virtual methods, the virtual methods are overridden in the derived class as per the specific requirement.
-
-<br/>
 <br/>
 <br/>
 <br/>
