@@ -49,9 +49,28 @@ namespace PetStore
         /// <returns>string</returns>
         protected internal string GetDetails()
         {
-            return $" Pet name : {name}\n Pet ID: {id}\n Pet Birthday : {dob.ToShortDateString()}\n Pet Gender : {gender}"; 
+            return $"without any params Pet name : {name}\n Pet ID: {id}\n Pet Birthday : {dob.ToShortDateString()}\n Pet Gender : {gender}"; 
+        } 
+        protected internal string GetDetails(string name ="Feline"){
+            return $"With string param Pet name : {this.name =name}\n Pet ID: {id}\n Pet Birthday : {dob.ToShortDateString()}\n Pet Gender : {gender}"; 
+        }
+        protected internal string GetDetails(string name, int id){
+            return $" Pet name : {this.name =name}\n Pet ID: {this.id =id}\n Pet Birthday : {dob.ToShortDateString()}\n Pet Gender : {gender}"; 
+        }
+        protected internal string GetDetails(string name, int id, DateTime dob){
+            return $" Pet name : {this.name =name}\n Pet ID: {id}\n Pet Birthday : {this.dob=dob}\n Pet Gender : {gender}"; 
+        }
+        protected internal string GetDetails(string name, int id, DateTime dob, Gender gender){
+            return $" Pet name : {this.name =name}\n Pet ID: {id}\n Pet Birthday : {this.dob=dob}\n Pet Gender : {this.gender=gender}"; 
         }
 
+        protected internal virtual void GetMeal(Gender gender){
+            if(gender == Gender.Male){
+                Console.Write("\n200 gms of wet food");
+            }
+            else
+                Console.Write("\n125 gms of wet food");
+        }
     }   
     enum Gender
     {

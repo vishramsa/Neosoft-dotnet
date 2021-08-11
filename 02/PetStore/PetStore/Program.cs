@@ -7,6 +7,7 @@ namespace PetStore
     {
         static void Main(string[] args)
         {
+            //GetPet();
             GetCat();
         }
         /// <summary>
@@ -16,7 +17,7 @@ namespace PetStore
         {
             Pet pet1 = new Pet(); 
             
-            Console.Write("Please enter your pet's Id: ");
+            /*Console.Write("Please enter your pet's Id: ");
             pet1.Id = int.Parse(Console.ReadLine());
             Console.Write("\nPlease enter your pet's name: ");
             pet1.Name = Console.ReadLine();
@@ -29,13 +30,14 @@ namespace PetStore
             else if (gender == 1)
                 pet1.Gender = Gender.Female;
             else
-                Console.Write("Incorrect gender press <0> for male and press <1> for female");
-            Console.Write(pet1.GetDetails());
+                Console.Write("Incorrect gender press <0> for male and press <1> for female");*/
+                DateTime date = DateTime.Parse("2012/11/15");
+            Console.Write(pet1.GetDetails("Pussy Cat", 123,date, Gender.Female));
+            pet1.GetMeal(pet1.Gender);
         }
         private static void GetCat()
         {
-            Cat pet1 = new Cat(); 
-            
+            Cat pet1=new Cat();            
             Console.Write("Please enter your pet's Id: ");
             pet1.Id = int.Parse(Console.ReadLine());
             Console.Write("\nPlease enter your pet's name: ");
@@ -50,7 +52,9 @@ namespace PetStore
                 pet1.Gender = Gender.Female;
             else
                 Console.Write("Incorrect gender press <0> for male and press <1> for female");
+            pet1.CatType = CatType.Himalayan;
             Console.Write(pet1.GetDetails());
+            pet1.GetMeal(pet1.Gender);
         }
     }
 }
