@@ -189,7 +189,7 @@ public class DerivedC : BaseC
 
 |**abstract** |  **override** | **new**|
 |-------------|-----------------|----------------|
-| In abstract method we don't only initiate function and not define it.| Using override we can override a method from parent class.             | new can be used to create a instance or to hide parent method.            |    
+| In abstract method we only initiate function and not define it.| Using override we can override a method from parent class.             | new can be used to create a instance or to hide parent method.            |    
 | We need it so that child class compulsorily overrides this(abstract) method.         | We need to override a particular method.          | We need it to hide method or create an object of a class.           |
 | We use abstract keyword in class and in its method         | We only use override in methods             | We use it in creation of instance and to hide existing data member              |
 | internal abstract void m2(); | internal override void m2(){}; | Solution Sol = new Solution();   **&&**  new public static int x = 50; |
