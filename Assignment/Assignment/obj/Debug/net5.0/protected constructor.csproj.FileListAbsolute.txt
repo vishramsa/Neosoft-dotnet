@@ -1,5 +1,0 @@
-C:\Group-10\10-Constructors\Assignment\obj\Debug\net5.0\protected constructor.csproj.AssemblyReference.cache
-C:\Group-10\10-Constructors\Assignment\obj\Debug\net5.0\protected constructor.GeneratedMSBuildEditorConfig.editorconfig
-C:\Group-10\10-Constructors\Assignment\obj\Debug\net5.0\protected constructor.AssemblyInfoInputs.cache
-C:\Group-10\10-Constructors\Assignment\obj\Debug\net5.0\protected constructor.AssemblyInfo.cs
-C:\Group-10\10-Constructors\Assignment\obj\Debug\net5.0\protected constructor.csproj.CoreCompileInputs.cache
