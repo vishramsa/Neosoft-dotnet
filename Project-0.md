@@ -67,3 +67,15 @@
 * Entity Framework
 * Azure SQL Database
 * xUnit, NUnit, or MSTest
+
+|# | Team Representative  | Team Members         | Store type       |
+|--|----------------------|----------------------|------------------|
+|1.|Shivam Gupta          |                      |                  |
+|2.|Harsh Chheda          |                      |                  |
+|3.|Prachi Gaikwad        |                      |                  |
+|4.|Himani Jain           |                      |                  |
+|5.|Aman Sharma           |                      |                  |
+|6.|Samuel Joy            |                      |                  |
+|7.|Alfaiz Khan           |                      |                  |
+|8.|Maaria Khan           |                      |                  |
+|9.|Akshay Pawar          |                      |                  |
