@@ -115,7 +115,7 @@ string alphabet = new string(letters);
   - If you change a member of the object by using this reference, the change is reflected in the argument in the calling method, even if you pass the object by value.
 
 ## [Properties](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties)
-- Smart fields in C# which are used to expose a private variable putsid the class
+- Smart fields in C# which are used to expose a private variable outsid the class
 - You can use conditionals with your properties.
 - properties can be created in 3 ways:
   - read-only - with only get block.
