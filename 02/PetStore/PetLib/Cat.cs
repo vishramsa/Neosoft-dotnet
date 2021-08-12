@@ -19,10 +19,11 @@ namespace PetLib
                 Console.WriteLine("\n 250 gms of wet food");
            else if(CatType == CatType.Himalayan && gender == Gender.Male)
                 Console.WriteLine("\n 350 gms of wet food");
-            else if(gender == Gender.Male)
+                 else if(gender == Gender.Male)
                 Console.WriteLine("\n 200 gms of wet food");
             else
                 Console.WriteLine("\n 150 gms of wet food");
+            
         }
     }
     public enum CatType{
