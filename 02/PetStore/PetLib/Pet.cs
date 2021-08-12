@@ -1,11 +1,8 @@
 ﻿using System;
 
-namespace PetStore
+namespace PetLib
 {
-    /// <summary>
-    /// This class is generic for all types of pets and can be extended
-    /// </summary>
-    class Pet
+    public class Pet
     {
         int id;
         /// <summary>
@@ -47,24 +44,24 @@ namespace PetStore
         /// This method returns the formatted string with all details of a pet, name, id, gender, dob
         /// </summary>
         /// <returns>string</returns>
-        protected internal string GetDetails()
+        public string GetDetails()
         {
             return $"without any params Pet name : {name}\n Pet ID: {id}\n Pet Birthday : {dob.ToShortDateString()}\n Pet Gender : {gender}"; 
         } 
-        protected internal string GetDetails(string name ="Feline"){
+        public string GetDetails(string name ="Feline"){
             return $"With string param Pet name : {this.name =name}\n Pet ID: {id}\n Pet Birthday : {dob.ToShortDateString()}\n Pet Gender : {gender}"; 
         }
-        protected internal string GetDetails(string name, int id){
+        public string GetDetails(string name, int id){
             return $" Pet name : {this.name =name}\n Pet ID: {this.id =id}\n Pet Birthday : {dob.ToShortDateString()}\n Pet Gender : {gender}"; 
         }
-        protected internal string GetDetails(string name, int id, DateTime dob){
+        public string GetDetails(string name, int id, DateTime dob){
             return $" Pet name : {this.name =name}\n Pet ID: {id}\n Pet Birthday : {this.dob=dob}\n Pet Gender : {gender}"; 
         }
-        protected internal string GetDetails(string name, int id, DateTime dob, Gender gender){
+        public string GetDetails(string name, int id, DateTime dob, Gender gender){
             return $" Pet name : {this.name =name}\n Pet ID: {id}\n Pet Birthday : {this.dob=dob}\n Pet Gender : {this.gender=gender}"; 
         }
 
-        protected internal virtual void GetMeal(Gender gender){
+        public virtual void GetMeal(Gender gender){
             if(gender == Gender.Male){
                 Console.Write("\n200 gms of wet food");
             }
@@ -72,7 +69,7 @@ namespace PetStore
                 Console.Write("\n125 gms of wet food");
         }
     }   
-    enum Gender
+    public enum Gender
     {
         Male =0, Female
     }

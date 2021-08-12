@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
+using PetLib;
 
 namespace PetStore
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) // entry point
         {
             //GetPet();
             GetCat();

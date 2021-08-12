@@ -1,7 +1,7 @@
 using System;
-namespace PetStore
+namespace PetLib
 {
-    class Cat : Pet
+    public class Cat : Pet
     {
         public CatType CatType { get; set; } = CatType.Abyssian; //autonomous property
         public double Weight { get; set; } = 7.0; // C# 7.0 and above allows initializing properties not earlier versions allows it.
@@ -9,12 +9,12 @@ namespace PetStore
         /// This method is shadowing its parent's method by hiding its implementation. With new keyword we hide the implwmwntation of the base class, this is why we call it as method hiding
         /// </summary>
         /// <returns>string format</returns>
-        internal new string GetDetails(){
+        public new string GetDetails(){
             string result = base.GetDetails();
             return result + $" \nCat type: {CatType} \n Cat Weight: {Weight} pounds";
         }
 
-        protected internal override void GetMeal(Gender gender)
+        public override void GetMeal(Gender gender)
         {
            if(CatType == CatType.Himalayan && gender == Gender.Female)
                 Console.WriteLine("\n 250 gms of wet food");
@@ -26,7 +26,7 @@ namespace PetStore
                 Console.WriteLine("\n 150 gms of wet food");
         }
     }
-    enum CatType{
+    public enum CatType{
         Abyssian, Persian, Himalayan, American_Bobtail, Balinese_Javanese, Bengal, Bombay,British_Shorthair
     }
 }
