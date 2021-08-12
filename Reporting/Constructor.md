@@ -1,7 +1,7 @@
   ## Constructor : 
   * A constructor is a special method that is used to initialize objects.
   * Constructor doesnt have any return type/value, but method has.
-  * Constructor should have same name that os class name!
+  * Constructor should have same name that as class name!
   
 
   ```C#
