@@ -114,6 +114,14 @@ string alphabet = new string(letters);
   - That is, the method receives not the object itself but an argument that indicates the location of the object.
   - If you change a member of the object by using this reference, the change is reflected in the argument in the calling method, even if you pass the object by value.
 
+## [Properties](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties)
+- Smart fields in C# which are used to expose a private variable outsid the class
+- You can use conditionals with your properties.
+- properties can be created in 3 ways:
+  - read-only - with only get block.
+  - write-only - with only set block.
+  - read-write property - with both get and set block.
+- [Method Hiding](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/new-modifier)
 ## References
 - [Learn C# in interactive way](https://docs.microsoft.com/en-us/users/dotnet/collections/yz26f8y64n7k07)
 - [Learn C# from video](https://channel9.msdn.com/Series/CSharp-Fundamentals-for-Absolute-Beginners)
