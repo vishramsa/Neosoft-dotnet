@@ -13,7 +13,6 @@ namespace PetLib
             string result = base.GetDetails();
             return result + $" \nCat type: {CatType} \n Cat Weight: {Weight} pounds";
         }
-
         public override void GetMeal(Gender gender)
         {
            if(CatType == CatType.Himalayan && gender == Gender.Female)

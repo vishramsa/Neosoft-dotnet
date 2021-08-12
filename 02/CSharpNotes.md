@@ -122,6 +122,13 @@ string alphabet = new string(letters);
   - write-only - with only set block.
   - read-write property - with both get and set block.
 - [Method Hiding](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/new-modifier)
+
+## [Params Keword](https://www.geeksforgeeks.org/c-sharp-params/)
+## Abstraction
+- [Abstract Classes and sealed](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members)
+- [Interface](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface)
+- [Abstract class vs Interface](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface)
+
 ## References
 - [Learn C# in interactive way](https://docs.microsoft.com/en-us/users/dotnet/collections/yz26f8y64n7k07)
 - [Learn C# from video](https://channel9.msdn.com/Series/CSharp-Fundamentals-for-Absolute-Beginners)
