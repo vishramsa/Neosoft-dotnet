@@ -13,7 +13,6 @@
 >## Manifest :
 
 ### <span style="color: #3c8f0d;">What is the 'Assembly Manifest' in C#?</span> 
-- 
 - Every assembly, whether static or dynamic, contains a collection of data that describes how the elements in the assembly relate to each other. 
 - The assembly manifest contains this assembly metadata. 
 - An assembly manifest contains all the metadata needed to specify the assembly's version 
