@@ -14,5 +14,5 @@
 | 6. | Aman, Alfaiz, Sana, Hrushikesh | Co-Variance and Contravariance|
 | 7. | Harsh, Akshay,Himani,Mayuri  | Late binding vs early binding in C#|
 | 8. | Nikita, Shivani Y, Shruti, Samuel | C# versions comparisons (C# 1.x till C# 9.0)|
-| 9. | Anshul, Jaideep, Saad, Shivam | Abstract method vs Override vs new keyword with methods.|
+| 9. | Anshul, Jaideep, Saad, Shivam | Assembly details - contents of assembly (manifest, metadata, version, resources), versioning in assembly|
 |10.|Sushma, Pranali, Krunal | Discussing Public, Private, static and Protected Constructor |
