@@ -93,7 +93,7 @@
 >## Resource:
 - .NET Assemblies can contain various types of resources like images, icons, files, etc. Such resources are mostly static, i.e.; do not keep changing during run time or application wise. Also, such resources are not executable items. So while deploying such assemblies, we need to make sure those resources are intact with the packaged assemblies. Else, assemblies may blow up while executing the resource dependent methods. So as part of deployment strategy, we should embed such resources into the assembly itself.
 
-- The ResourceManager class retrieves resources from a binary .resources file that is embedded in an assembly or from a standalone .resources file. If an app has been localized and localized resources have been deployed in satellite assemblies, it looks up culture-specific resources, provides resource fallback when a localized resource does not exist, and supports resource serialization. <br>
+- The ResourceManager class retrieves resources from a binary .resources file that is embedded in an assembly or from a standalone .resources file. If an app has been localized or internationalize resources have been deployed in satellite assemblies, it looks up culture-specific resources, provides resource fallback when a localized resource does not exist, and supports resource serialization. <br>
 [More about ResourceManager Class](https://docs.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager?view=net-5.0)
 ```c#
 using System.Resources
