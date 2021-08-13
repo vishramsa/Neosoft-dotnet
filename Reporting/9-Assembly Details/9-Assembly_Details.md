@@ -21,7 +21,7 @@
 - The assembly manifest can be stored in either a PE file (an .exe or .dll) with Microsoft intermediate language (MSIL) code or in a standalone PE file that contains only assembly manifest information.
 <br>
 
-![Manifest Image](Images/Capture.png)
+![Manifest Image](Images/capture1.png)
 
 <br>
 
@@ -212,7 +212,7 @@ public class Example
 
 <br>
 
- ![Overriding Image](Images/PRocess.png)
+ ![Overriding Image](Images/process1.png)
 
 <br>
 
