@@ -3,7 +3,6 @@ using System.Linq;
 using System.IO;
 using System.Xml.Serialization;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 namespace PetData
 {
     public class FileRepo:IRepo
@@ -27,9 +26,11 @@ namespace PetData
                 System.Console.WriteLine("All cats has bee stored in the XML file at {0}",path);
         }
 
-        public void AddDummyCats_Json(List<Cat> cats,string _path = @".\Cats.json"){
-           FileStream stream =File.Create(_path);
-           var json= JsonSerializer.Serialize(stream,cats);
+        public void AddDummyCats_Json(IEnumerable<Cat> cats,string _path = @".\Cats.json"){
+           using(FileStream stream =File.Create(_path)){
+           var json=JsonSerializer.Serialize(cats);
+           File.WriteAllText(_path,json);
+           }
            System.Console.WriteLine("Cats are added to {0} \n",_path);
         }
         public Stack<Cat> Init_Stack(){
