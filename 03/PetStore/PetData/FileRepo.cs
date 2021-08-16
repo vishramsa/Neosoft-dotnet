@@ -29,7 +29,9 @@ namespace PetData
         public void AddDummyCats_Json(IEnumerable<Cat> cats,string _path = @".\Cats.json"){
            using(FileStream stream =File.Create(_path)){
            var json=JsonSerializer.Serialize(cats);
+           stream.Close();
            File.WriteAllText(_path,json);
+           stream.Close();
            }
            System.Console.WriteLine("Cats are added to {0} \n",_path);
         }
