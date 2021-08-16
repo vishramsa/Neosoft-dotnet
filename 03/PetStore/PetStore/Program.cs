@@ -10,16 +10,23 @@ namespace PetStore
         {
             //GetCat();
             PetData.FileRepo repo = new PetData.FileRepo();
-            var cats = repo.Init_Dictionary();
-            foreach (var cat in cats.Keys)
+            /*var newCat=AddCat();
+            repo.Add(Mapper.Map(newCat));
+
+           var cats = repo.GetAllCats();
+            foreach (var cat in cats)
             {
-                Console.WriteLine($"{cat} {cats[cat].Name}");
-            }
+                Console.WriteLine($"{cat.Id} {cat.Name}");
+            }*/
+            System.Console.WriteLine("Please enter the name of the cat to be searched for ");
+            var name=Console.ReadLine();
+            var cat=repo.GetCat(name);
+            System.Console.WriteLine($"{cat.Id} {cat.Name} {cat.CatType} {cat.Dob} {cat.Weight} pounds {cat.Gender}");
         }
         /// <summary>
         /// This function takes input from user and print those details in the formatted way
         /// </summary>
-        private static void GetCat()
+        private static PetLib.Cat AddCat()
         {
             Cat pet1=new Cat();            
             Console.Write("Please enter your pet's Id: ");
@@ -36,9 +43,10 @@ namespace PetStore
                 pet1.Gender = Gender.Female;
             else
                 Console.Write("Incorrect gender press <0> for male and press <1> for female");
+            Console.Write(" Please enter the weight of your cat in pounds ");
+            pet1.Weight=Convert.ToDouble(Console.ReadLine());
             pet1.CatType = CatType.Himalayan;
-            Console.Write(pet1.GetDetails());
-            pet1.GetMeal(pet1.Gender);
+            return pet1;
         }
     }
 }
