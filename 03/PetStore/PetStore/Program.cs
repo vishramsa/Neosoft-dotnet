@@ -11,17 +11,24 @@ namespace PetStore
             //GetCat();
             PetData.FileRepo repo = new PetData.FileRepo();
             /*var newCat=AddCat();
-            repo.Add(Mapper.Map(newCat));
+            repo.Add(Mapper.Map(newCat));*/
 
-           var cats = repo.GetAllCats();
+            /*var cats = repo.GetAllCats();
             foreach (var cat in cats)
             {
-                Console.WriteLine($"{cat.Id} {cat.Name}");
+                Console.WriteLine($"{cat.Id} {cat.Name} {cat.CatType} {cat.Dob} {cat.Weight} pounds {cat.Gender}");
             }*/
-            System.Console.WriteLine("Please enter the name of the cat to be searched for ");
+           /*Console.WriteLine("Please enter the name of the cat to be searched for ");
             var name=Console.ReadLine();
             var cat=repo.GetCat(name);
-            System.Console.WriteLine($"{cat.Id} {cat.Name} {cat.CatType} {cat.Dob} {cat.Weight} pounds {cat.Gender}");
+            Console.WriteLine($"{cat.Id} {cat.Name} {cat.CatType} {cat.Dob} {cat.Weight} pounds {cat.Gender}");*/
+            
+            //SERIALIZATION
+            var cats=repo.Init();
+            //repo.AddDummyCats(cats);//into XML
+            repo.AddDummyCats_Json(cats);//into JSON
+
+
         }
         /// <summary>
         /// This function takes input from user and print those details in the formatted way

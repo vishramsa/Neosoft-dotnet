@@ -245,7 +245,18 @@
 ```
 - As you see there is no call to Dispose method because the using statement handles that automatically.
 - Both codes above generate the same output.
-
+- in C# 8.0 and above version you can use [using statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement)
+  
+  ```
+    class Program
+        {
+            static void Main(string[] args)
+            {
+                using var connection = new DatabaseConnection()            
+                    //Write your operational code here            
+            }
+        }
+  ```
 ## [File Handling In C#](https://www.tutorialspoint.com/csharp/csharp_file_io.htm)
 - **System.IO** namespace provides four classes that allow you to manipulate individual files, as well as interact with a machine directory structure.
 - The **Directory** and **File** directly extends System.Object and supports the creation, copying, moving and deletion of files using various static methods.
