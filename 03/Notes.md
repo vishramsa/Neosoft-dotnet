@@ -282,8 +282,17 @@
   - C# statements can execute in either checked or unchecked context. 
   - The [checked](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/checked) keyword is used to explicitly enable overflow checking for integral-type arithmetic operations and conversions.
   - In an [unchecked](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/unchecked) context, arithmetic overflow is ignored and the result is truncated by discarding any high-order bits that don't fit in the destination type.
+
+## SDLC
+- Phases of SDLC -> Requirement Analysis, Design, Development, Testing, Deployment, Maintainence 
+- Waterfall, Bing Bang Model, RAD, Spiral Model, Iterative, Agile (Scrum), TDD
 ## Testing 
-- [TDD](https://www.c-sharpcorner.com/article/a-basic-introduction-of-unit-test-for-beginners/) using MST Test
+- Black-box, white-box testing
+- Performance Testing, Load Testing, Smoke testing, Integration Testing, Penetration Testing, Unit Testing.
+- **Unit Testing** is important component of developer testing which is heavily used in TDD.
+  - In.Net/.Net Core supports multiple frameworks for testing 
+  - MSTest, NUnit, xUnit.
+- [TDD](https://www.c-sharpcorner.com/article/a-basic-introduction-of-unit-test-for-beginners/) using MS Test
 - [Unit Testing](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test) in VSCode and .Net core **xUnit**
 - [Unit Testing](https://docs.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2019) in Visual studio
 

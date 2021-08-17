@@ -14,8 +14,8 @@ namespace PetLib
         /// <returns> Feline Body Mass Index</returns>
         public virtual double Fbmi(double ribCage, double legLength){
             if(ribCage>0 && legLength>0){
-            System.Console.WriteLine($"Rib cage size - {ribCage} inches , Leg Length - {legLength} inches");
-            var fbmi=(((ribCage/0.7062)-legLength)/0.9156)-legLength;
+                System.Console.WriteLine($"Rib cage size - {ribCage} inches , Leg Length - {legLength} inches");
+                var fbmi=(((ribCage/0.7062)-legLength)/0.9156)-legLength;
             return fbmi;
             }
             else
