@@ -273,3 +273,17 @@
         - The following items can be serialized using the XmlSerializer class:
             - Public read/write properties and fields of public classes.
             - Classes that implement ICollection or IEnumerable.
+## Viewing contents of an assembly
+- You can view the metadata about the assembly in 2 ways:
+  - Runtime: which means all the contents will be loaded at runtime of the program. We use Reflections in C# to view contents at runtime.
+  - Compile Time - ILDASM.exe is used to view contents with Gui. 
+## [Exception and Exception Handling](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
+- [Checked and Unchecked](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/checked-and-unchecked)
+  - C# statements can execute in either checked or unchecked context. 
+  - The [checked](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/checked) keyword is used to explicitly enable overflow checking for integral-type arithmetic operations and conversions.
+  - In an [unchecked](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/unchecked) context, arithmetic overflow is ignored and the result is truncated by discarding any high-order bits that don't fit in the destination type.
+## Testing 
+- [TDD](https://www.c-sharpcorner.com/article/a-basic-introduction-of-unit-test-for-beginners/) using MST Test
+- [Unit Testing](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test) in VSCode and .Net core **xUnit**
+- [Unit Testing](https://docs.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2019) in Visual studio
+
