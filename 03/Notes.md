@@ -386,11 +386,12 @@
 - Singleton supports object disposal
 - Singleton object is stored on heap
 - Singleton objects can be cloned
-- For more details, please refer to the following:
+
+## For more details, please refer to the following:
 - [TDD](https://www.c-sharpcorner.com/article/a-basic-introduction-of-unit-test-for-beginners/) using MS Test
 - [Unit Testing](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test) in VSCode and .Net core **xUnit**
 - [Unit Testing](https://docs.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2019) in Visual studio
 - [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
-- [Design Patterns video series](
+- [Design Patterns video series](https://www.youtube.com/playlist?list=PL6n9fhu94yhUbctIoxoVTrklN3LMwTCmd)
 - [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns))
 
