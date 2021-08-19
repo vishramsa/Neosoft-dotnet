@@ -13,7 +13,13 @@ namespace MiscelleaneousTopics
             // del += Shape.CircleArea; //multicast delegate
             // del(7); //del.Invoke(5); 
             //Shape.delSqArea(5);
-            Console.WriteLine(Shape.delCircleArea(7));
+            //Console.WriteLine(Shape.delCircleArea(7));
+
+            var obj1=Singleton.getInstance;  
+            var obj2=Singleton.getInstance; 
+            var obj3=Singleton.getInstance; 
+            System.Console.WriteLine(object.ReferenceEquals(obj1,obj2));
+
         }
     }
 }
