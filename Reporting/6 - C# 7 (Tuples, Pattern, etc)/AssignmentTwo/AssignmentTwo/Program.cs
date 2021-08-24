@@ -1,24 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace Test
+namespace AssignmentTwo
 {
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
+
             //Tuples
 
             var employees = (SE: "Sam", BA: "Pam");
             Console.WriteLine($"{employees.SE}, {employees.BA}");
 
             (string name, int age) info = ("sam", 21);
-            Console.WriteLine($"{info.name},{info.age}");
+            Console.WriteLine($"{info.name},{info.age}"); 
 
 
-
-            
-           /* //Pattern Matching
+            //Pattern Matching
             string checkNull = null;
             var objPerson = new Person() { firstName = "Kajal", lastName = "Padhiyar", age = 33 };
             var myData = "My Custom Data";
@@ -68,37 +66,6 @@ namespace Test
                 case null:
                     throw new NullReferenceException("Null found in sequence");
             }*/
-
         }
-        /* class Person
-         {
-             public string firstName { get; set; }
-             public string lastName { get; set; }
-             public int age { get; set; }
-
-         }*/
-
-        /*
-        //NotNullable Refernce Type Demo
-        internal class TestNonNullable
-	    {
-		    public void Test()
-            {
-                NonNullableType nonNullableType = null;
-                Console.WriteLine(nonNullableType.NonNullableProperty);
-            }
-
-        }
-        
-	        internal class TestNonNullable()
-	        {
-		        public void Test()
-                {
-                NonNullableType nonNullableType = null;
-                Console.WriteLine(nonNullableType.NonNullableProperty);
-                }
-
-            }
-        }*/
     }
 }
