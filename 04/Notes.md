@@ -1,4 +1,4 @@
-# Introdution to Databases
+# Introduction to Databases
 ## Information vs data
 - Data is a raw and unorganized fact that required to be processed to make it meaningful. Data can be simple at the same time unorganized unless it is organized. Generally, data comprises facts, observations, perceptions numbers, characters, symbols, image, etc.
 - Data is always interpreted, by a human or machine, to derive meaning. So, data is meaningless. Data contains numbers, statements, and characters in a raw form.
@@ -37,3 +37,26 @@
   - **Conceptual Design**: The requirements of database are captured using high level conceptual data model. For Example, the ER model is used for the conceptual design of the database.
   - **Logical Design**: Logical Design represents data in the form of relational model. ER diagram produced in the conceptual design phase is used to convert the data into the Relational Model.
   - **Physical Design**: In physical design, data in relational model is implemented using commercial DBMS like Sql Server, Oracle, DB2.
+
+## What is a database model?
+- A database model shows the logical structure of a database, including the relationships and constraints that determine how data can be stored and accessed. 
+- Individual database models are designed based on the rules and concepts of whichever broader data model the designers adopt. Most data models can be represented by an accompanying database diagram
+### [Types of database models](https://www.lucidchart.com/pages/database-diagram/database-models/#section_0)
+- There are many kinds of data models. Some of the most common ones include:
+   - Hierarchical database model
+   - Relational model
+   - Network model
+   - Object-oriented database model
+   - Entity-relationship model
+   - Document model
+   - Entity-attribute-value model
+   - Star schema
+   - The object-relational model, which combines the two that make up its name
+
+- The most common model, the **relational model** sorts data into tables, also known as relations, each of which consists of columns and rows. 
+  - Relational databases are typically written in Structured Query Language (SQL). The model was introduced by E.F. Codd in 1970. 
+  - Each column lists an attribute of the entity in question, such as price, zip code, or birth date. Together, the attributes in a relation are called a **domain**. 
+  - A particular attribute or combination of attributes is chosen as a primary key that can be referred to in other tables, when it’s called a **foreign key**.
+  - Each row, also called a **tuple**, includes data about a specific instance of the entity in question, such as a particular employee.
+  - The model also accounts for the types of relationships between those tables, including one-to-one, one-to-many, and many-to-many relationships.
+  - Within the database, tables can be normalized, or brought to comply with normalization rules that make the database flexible, adaptable, and scalable. When normalized, each piece of data is atomic, or broken into the smallest useful pieces.
