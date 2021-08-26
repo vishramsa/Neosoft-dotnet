@@ -68,3 +68,9 @@
 4. Unique key
 5. Default
 6. Check 
+
+## Types of Sql Queries
+1. DDL - create, alter, drop, truncate
+2. DML - insert, update, delete
+3. DQL - select, filteration
+4. DCL - grant, revoke
