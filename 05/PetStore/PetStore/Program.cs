@@ -12,22 +12,27 @@ namespace PetStore
     {
         static void Main(string[] args) // entry point
         {
-            var config = new ConfigurationBuilder()
+            /*var config = new ConfigurationBuilder()
                 .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
                 .AddJsonFile("appSettings.json")
                 .Build();
 
             string conString = config.GetConnectionString("PetDb");
-            GetCatsDisconnected(conString);
-           /*
-            GetCats(conString);
+            GetCatsDisconnected(conString);*/
+            /*
+             GetCats(conString);
 
-            Console.Write("PLease enter the Id of the cat whose name is to be changed ");
+             Console.Write("PLease enter the Id of the cat whose name is to be changed ");
+             int id = Int32.Parse(Console.ReadLine());
+             Console.Write("Please enter the updated name of the cat ");
+             string name = Console.ReadLine();
+             UpdatCatName(conString, id, name);
+             GetCats(conString);*/
+
+            Console.Write("PLease enter the Id of the cat which you want to delete ");
             int id = Int32.Parse(Console.ReadLine());
-            Console.Write("Please enter the updated name of the cat ");
-            string name = Console.ReadLine();
-            UpdatCatName(conString, id, name);
-            GetCats(conString);*/
+            string s = @"Data Source=DESKTOP-NOPJF0S\SQLEXPRESS;Initial Catalog=petDB;Integrated Security=True";
+            DeleteCatId(s,id);
         }
 
         private static void GetCats(string conString, string query= "SELECT Id, Name from Cats")
@@ -53,7 +58,15 @@ namespace PetStore
             ConnectedArchitecture.UpdateCatNameById(conStr, out connection, out command, id, name);
 
         }
-        
+
+        private static void DeleteCatId(string conStr, int id)
+        {
+            SqlConnection connection;
+            SqlCommand command;
+            ConnectedArchitecture.DeleteCatById(conStr, out connection, out command, id);
+
+        }
+
         private static void GetCatsDisconnected(string conStr, string query="select Id, Name from Cats") {
             SqlConnection connection;
             SqlDataAdapter adapter;
