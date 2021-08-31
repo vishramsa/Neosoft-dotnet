@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using PetDataADO;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.UserSecrets;
+using System.Data;
 
 namespace PetStore
 {
@@ -17,14 +18,16 @@ namespace PetStore
                 .Build();
 
             string conString = config.GetConnectionString("PetDb");
-            //1. Make sql connection
+            GetCatsDisconnected(conString);
+           /*
             GetCats(conString);
+
             Console.Write("PLease enter the Id of the cat whose name is to be changed ");
             int id = Int32.Parse(Console.ReadLine());
             Console.Write("Please enter the updated name of the cat ");
             string name = Console.ReadLine();
             UpdatCatName(conString, id, name);
-            GetCats(conString);
+            GetCats(conString);*/
         }
 
         private static void GetCats(string conString, string query= "SELECT Id, Name from Cats")
@@ -49,6 +52,17 @@ namespace PetStore
             SqlCommand command;
             ConnectedArchitecture.UpdateCatNameById(conStr, out connection, out command, id, name);
 
+        }
+        
+        private static void GetCatsDisconnected(string conStr, string query="select Id, Name from Cats") {
+            SqlConnection connection;
+            SqlDataAdapter adapter;
+            DataSet ds;
+            var cats=DisconnectedArchitecture.GetCats(conStr, query, out connection, out adapter, out ds);
+            foreach (DataRow cat in cats)
+            {
+                Console.WriteLine($"{cat["Id"]} {cat[1]}");
+            }
         }
         /// <summary>
         /// This function takes input from user and print those details in the formatted way
