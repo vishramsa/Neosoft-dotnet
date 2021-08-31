@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Net.Http;
 
 namespace PetDataADO
 {
@@ -34,6 +35,36 @@ namespace PetDataADO
                     connection.Close();
                 }
                
+            }
+        }
+        public static void UpdateCatNameById(string conString, out SqlConnection connection, out SqlCommand command, int id, string name)
+        {
+            string query = "UpdateCatName";
+            using (connection = new SqlConnection(conString))
+            {
+                try
+                {                    
+                    using (command=new SqlCommand(query,connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        SqlParameter parameter;
+                        parameter = command.Parameters.Add("@Id", SqlDbType.Int);
+                        parameter.Value = id;
+
+                        parameter = command.Parameters.Add("@name", SqlDbType.VarChar);
+                        parameter.Value = name;
+
+                        connection.Open();
+
+                        int rowsAffected=command.ExecuteNonQuery();
+                        Console.WriteLine($"Cat name updated, {rowsAffected} row(s) affected");
+                    }
+                }
+                finally
+                {
+                    connection.Close();
+                }
             }
         }
     }
