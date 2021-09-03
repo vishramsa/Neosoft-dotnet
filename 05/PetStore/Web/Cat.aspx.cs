@@ -11,8 +11,12 @@ namespace Web
     {        
         protected void Page_Load(object sender, EventArgs e)
         {
-            Load_dd_CatType();
-            Load_dd_FurType();
+            dd_CatType.DataSource = Enum.GetNames(typeof(CatType));
+            dd_CatType.DataBind();
+            dd_FurType.DataSource = Enum.GetNames(typeof(FurType));
+            dd_FurType.DataBind();
+            //Load_dd_CatType();
+            //Load_dd_FurType();
         }
 
         private void Load_dd_CatType()
